@@ -85,6 +85,11 @@ service thermal-engine /system/bin/thermal-engine
    class main
    user root
    group root
+
+service irsc_util /system/bin/logwrapper /system/bin/irsc_util "/etc/sec_config"
+    class main
+    user root
+    oneshot
   
 service qrngd /system/bin/qrngd -f
    class main

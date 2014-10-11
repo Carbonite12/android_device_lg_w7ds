@@ -55,6 +55,9 @@ on property:ro.reserve.blockcount=*
     exec /system/bin/tune2fs -r $ro.reserve.blockcount \
               -u system -g system $ro.reserve.userdata
 
+#open access to IR for all apps
+chmod 666 /dev/ttyHSL1
+
 #CAPP_POWEROFF_ANI
 service shutdownanim /system/bin/shutdownanimation
     user graphics
