@@ -79,20 +79,6 @@
         <item>75</item>
     </integer-array>
 
-    <!-- Vibrator pattern to be used as for notifications while alerts
-         are disabled (e.g. during phone calls) if enabled by the user.
-     -->
-    <integer-array name="config_notificationNoAlertsVibePattern">
-        <item>0</item>
-        <item>30</item>
-        <item>75</item>
-        <item>30</item>
-    </integer-array>
-
-    <!-- Performance profiles  	-->
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
-
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
@@ -307,9 +293,6 @@
         config to 7. -->
     <integer name="config_deviceHardwareKeys">1</integer>
 
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
@@ -326,5 +309,8 @@
         <item>850</item>    <!-- Bottom -->
         <item>880</item>    <!-- Right -->
     </integer-array>
+
+    <!-- Camera flash -->
+    <bool name="config_device_has_camera_flash">true</bool>
 
 </resources>
