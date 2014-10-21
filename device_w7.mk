@@ -389,5 +389,10 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Swype 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    $(LOCAL_PATH)/system/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk    
+
 $(call inherit-product, vendor/lge/w7/w7-vendor.mk)
 
