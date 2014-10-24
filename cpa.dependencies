@@ -1,3 +1,40 @@
 [
+
+  {
+    "remote": "github",
+    "revision": "cm-11.0",
+    "repository": "CyanogenMod/android_device_qcom_common",
+    "target_path": "device/qcom/common"
+  },
+  {
+    "remote": "github",
+    "revision": "cm-11.0",
+    "repository": "CyanogenMod/android_hardware_qcom_fm",
+    "target_path": "hardware/qcom/fm"
+  },
+  {
+    "remote": "github",
+    "revision": "cm-11.0",
+    "repository": "CyanogenMod/android_hardware_qcom_display-caf-new",
+    "target_path": "hardware/qcom/display-caf-new"
+  },
+  {
+    "remote": "github",
+    "revision": "cm-11.0",
+    "repository": "CyanogenMod/android_hardware_qcom_media-caf-new",
+    "target_path": "hardware/qcom/media-caf-new"
+  },
+  {
+    "remote": "github",
+    "revision": "kitkat",
+    "repository": "CRXTeam/proprietary_vendor_w7",
+    "target_path": "vendor/lge/w7"
+  },
+  {
+    "remote":       "github",
+    "revision":     "quarx",
+    "repository":   "CRXTeam/LG_L90_kernel",
+    "target_path":  "kernel/lge/msm8226"
+  }
  
 ]
