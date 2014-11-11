@@ -310,7 +310,5 @@
         <item>880</item>    <!-- Right -->
     </integer-array>
 
-    <!-- Camera flash -->
-    <bool name="config_device_has_camera_flash">true</bool>
-
+ 
 </resources>
