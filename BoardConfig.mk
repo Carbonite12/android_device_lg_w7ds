@@ -230,6 +230,9 @@ BOARD_SEPOLICY_UNION += \
 	wpa_supplicant.te \
 	zygote.te
 
+#Radio / RIL - experimental;)
+BOARD_RIL_CLASS := ../../../device/lge/w7/ril/
+
 ifneq ($(TARGET_BUILD_VARIANT),user)
 	BOARD_SEPOLICY_UNION += su.te
 endif
