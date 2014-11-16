@@ -374,6 +374,11 @@ NFCEE_ACCESS_PATH := device/lge/w7/prebuilt/etc/nfcee_access.xml
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
+# Google Keyboard Prebuilt 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    $(LOCAL_PATH)/system/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk    
+
 # Enable KSM by default
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ksm.default=1
