@@ -1,7 +1,6 @@
 #
 # system.prop for w7
 #
-############################################################ CLEANUP ME PLEASE QUARX ###########################################################
 
 # Use reference RIL for initial bringup
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
@@ -18,15 +17,12 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 persist.radio.msgtunnel.start=false
-# Start in cdma mode
-#
-# System props for telephony
-# System prop to turn on CdmaLTEPhone always
-# LGE_CHANGE_S by.mun@lge.com 2013-08-14 turn off CdmaLTEPhone for W7
+
 telephony.lteOnCdmaDevice=0
-ro.telephony.default_network=0
+ro.telephony.default_network=3
 
 ro.ril.enable.amr.wideband=1
+ro.config.hw_fast_dormancy=1
 ro.lge.proximity.delay=25
 ro.telephony.call_ring.delay=0
 
@@ -85,4 +81,16 @@ persist.service.crash.enable=0
 ro.config.vc_call_vol_steps=6
 persist.data.sbp.update=0
 persist.radio.rat_on=legacy
-ro.lge.proximity.delay=25
+
+# Reduce Background apps limit
+ro.sys.fw.bg_apps_limit=20
+
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon 400 MSM8226 (28 nm)
+ro.device.cpu=ARMv7 1200MHz Quad-core ARM Cortex-A7 MPcore
+ro.device.gpu=Qualcomm Adreno 305 (450 - MHz)
+ro.device.rear_cam=8 Mpix (3464 x 2312)
+ro.device.front_cam=VGA (640x480)
+ro.device.screen_res=4,7' 960x540 pixels ( ~234 ppi)
+
+
