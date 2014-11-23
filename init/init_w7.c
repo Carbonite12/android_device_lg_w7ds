@@ -78,6 +78,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     property_get("ro.boot.serialno", serial);
+    property_set("ro.telephony.ril_class", "W7RIL");
     if (strncmp(serial, "LGD410", 6) == 0) {
         /* D415, D410n (is this exist!?) */
         if (check_cmdline("model.name=LG-D410hn") == 1) {

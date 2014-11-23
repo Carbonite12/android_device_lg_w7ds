@@ -69,6 +69,9 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/lge/w7/ril/
+
 # Audio
 AUDIO_FEATURE_DISABLED_FM := false
 BOARD_HAVE_QCOM_FM := true
