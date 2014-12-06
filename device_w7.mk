@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
     device/lge/w7/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     device/lge/w7/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/lge/w7/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
@@ -80,6 +81,7 @@ PRODUCT_COPY_FILES += \
     device/lge/w7/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
     device/lge/w7/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
     device/lge/w7/prebuilt/etc/init.zetaw.model.sh:system/etc/init.zetaw.model.sh \
+    device/lge/w7/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
     device/lge/w7/prebuilt/etc/sap.conf:system/etc/sap.conf \
     device/lge/w7/prebuilt/etc/gps.conf:system/etc/gps.conf \
     device/lge/w7/prebuilt/etc/msap.conf:system/etc/msap.conf \
