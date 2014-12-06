@@ -29,6 +29,7 @@ ro.telephony.default_network=0
 ro.ril.enable.amr.wideband=1
 ro.lge.proximity.delay=25
 ro.telephony.call_ring.delay=0
+ro.build.product=w7
 
 persist.radio.adb_log_on=1
 persist.radio.qcril_am_enabled=1
