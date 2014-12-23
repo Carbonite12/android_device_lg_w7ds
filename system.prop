@@ -29,7 +29,6 @@ ro.telephony.default_network=0
 ro.ril.enable.amr.wideband=1
 ro.lge.proximity.delay=25
 ro.telephony.call_ring.delay=0
-ro.build.product=w7
 
 persist.radio.adb_log_on=1
 persist.radio.qcril_am_enabled=1
@@ -87,3 +86,15 @@ ro.config.vc_call_vol_steps=6
 persist.data.sbp.update=0
 persist.radio.rat_on=legacy
 ro.lge.proximity.delay=25
+
+ro.build.product=w7
+ro.product.device=w7
+ro.product.model=L90
+
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon 400 MSM8226 (28 nm)
+ro.device.cpu=ARMv7 1200MHz Quad-core ARM Cortex-A7 MPcore
+ro.device.gpu=Qualcomm Adreno 305 (450 - MHz)
+ro.device.rear_cam=8 Mpix (3464 x 2312)
+ro.device.front_cam=VGA (640x480)
+ro.device.screen_res=4,7' 960x540 pixels ( ~234 ppi)
