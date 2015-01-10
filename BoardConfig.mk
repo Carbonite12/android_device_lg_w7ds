@@ -180,6 +180,9 @@ TARGET_INCREMENTAL_OTA_VERBATIM_FILES := system/app/Provision.apk
 BOARD_NFC_HAL_SUFFIX := w7
 BOARD_NFC_CHIPSET := pn547
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/lge/w7/ril/
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
 	device/lge/w7/sepolicy

@@ -1,0 +1,33 @@
+[
+  {
+    "repository":  "SlimRoms/device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch":      "kk4.4"
+  },
+  {
+    "repository": "CRXTeam/LG_L90_kernel",
+    "target_path": "kernel/lge/msm8226",
+    "branch":      "zero"
+  },
+  {
+    "repository":  "SlimRoms/hardware_qcom_audio-caf",
+    "target_path": "hardware/qcom/audio-caf",
+    "branch":      "kk4.4"
+  },
+  {
+    "repository":  "SlimRoms/hardware_qcom_display-caf-new",
+    "target_path": "hardware/qcom/display-caf-new",
+    "branch":      "kk4.4"
+  },
+  {
+    "repository":  "SlimRoms/hardware_qcom_media-caf-new",
+    "target_path": "hardware/qcom/media-caf-new",
+    "branch":      "kk4.4"
+  },
+  {
+    "repository": "CyanogenMod/android_hardware_qcom_fm",
+    "target_path": "hardware/qcom/fm",
+    "branch":      "cm-11.0"
+  }
+]
+
