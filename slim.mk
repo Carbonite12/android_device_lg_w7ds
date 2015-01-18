@@ -9,6 +9,6 @@ $(call inherit-product, device/lge/w7/full_w7.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := LG L90
-PRODUCT_NAME := cm_w7
+PRODUCT_NAME := slim_w7
 PRODUCT_DEVICE := w7
 

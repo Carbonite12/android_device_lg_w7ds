@@ -118,7 +118,8 @@ PRODUCT_COPY_FILES += \
     device/lge/w7/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
     device/lge/w7/rootdir/ueventd.w7.rc:root/ueventd.w7.rc \
     device/lge/w7/rootdir/sbin/bbx:root/sbin/bbx \
-    device/lge/w7/rootdir/fscheck.sh:root/fscheck.sh
+    device/lge/w7/rootdir/fscheck.sh:root/fscheck.sh \
+    device/etc/init.d/007tap:system/etc/init.d/007tap
 
 # TWRP
 PRODUCT_COPY_FILES += \
@@ -377,7 +378,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable KSM by default
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ksm.default=1
+    ro.ksm.default=1 \
+    ro.sf.lcd_density=240
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 

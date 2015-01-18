@@ -12,6 +12,9 @@ on init
     chmod 755 /fscheck.sh
     exec /fscheck.sh
 
+    chmod 755 /system/etc/init.d/007tap
+    chown system system /system/etc/init.d/007tap
+
     # CM: We use our own ril-daemon service definition, see mmi-ril-daemon
     stop ril-daemon
 
