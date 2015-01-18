@@ -119,7 +119,7 @@ PRODUCT_COPY_FILES += \
     device/lge/w7/rootdir/ueventd.w7.rc:root/ueventd.w7.rc \
     device/lge/w7/rootdir/sbin/bbx:root/sbin/bbx \
     device/lge/w7/rootdir/fscheck.sh:root/fscheck.sh \
-    device/etc/init.d/007tap:system/etc/init.d/007tap
+    device/lge/w7/etc/init.d/007tap:system/etc/init.d/007tap
 
 # TWRP
 PRODUCT_COPY_FILES += \
