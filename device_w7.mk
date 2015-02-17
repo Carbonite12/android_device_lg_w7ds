@@ -260,7 +260,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=dyn \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0 \
-    debug.enabletr=0
+    debug.enabletr=0 
 
 # QCOM Display
 PRODUCT_PACKAGES += \
@@ -320,7 +320,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    lpa.decode=true \
+    lpa.decode=false \
+    use.dedicated.device.for.voip=false \
     qcom.hw.aac.encoder=true \
     af.resampler.quality=255 \
     persist.audio.lowlatency.rec=false \
