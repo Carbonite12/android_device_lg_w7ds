@@ -31,11 +31,12 @@ TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/lge/w7/init/init_w7.c
 
+
 # Platform
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 TARGET_BOARD_PLATFORM := msm8226
-TARGET_CPU_VARIANT := krait
+TARGET_CPU_VARIANT := cortex-a7
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 TARGET_CPU_ABI := armeabi-v7a
@@ -44,15 +45,48 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOOTLOADER_BOARD_NAME := w7
 
+#Judas'es flags
+TARGET_GLOBAL_CFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+SUPPRES_UNUSED_WARNING := true
+TARGET_USE_O3 := true
+STRICT_ALIASING := true
+OPT_MEMORY := true
+TARGET_CPU_SMP := true
+TARGET_GCC_VERSION_ARM := 4.8
+ENABLE_GRAPHITE := true
+
+# Architecture
+# TARGET_ARCH := arm
+# TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
+# TARGET_BOARD_PLATFORM := msm8226
+# TARGET_CPU_VARIANT := cortex-a7
+# TARGET_ARCH_VARIANT_CPU := cortex-a9
+# TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+# TARGET_USE_KINGFISHER_OPTIMIZATION := true
+# TARGET_CPU_ABI := armeabi-v7a
+# TARGET_CPU_ABI2 := armeabi
+# TARGET_ARCH_VARIANT := armv7-a-neon
+# ARCH_ARM_HAVE_TLS_REGISTER := true
+# TARGET_BOOTLOADER_BOARD_NAME := w7
+# ARCH_ARM_HAVE_NEON := true
+# TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+# TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+# SUPPRES_UNUSED_WARNING := true
+# OPT_MEMORY := true
+# TARGET_CPU_SMP := true
+
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w7/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/msm8226
-TARGET_KERNEL_CONFIG := cm12_msm8226_defconfig
+TARGET_KERNEL_CONFIG := w7_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w7
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+# TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-cortex_a7-linux-gnueabihf-
+
 
 # Enable dex-preoptimization to speed up first boot sequence
 WITH_DEXPREOPT := true
@@ -153,7 +187,7 @@ BOARD_VOLD_MAX_PARTITIONS := 40
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00E00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00E00000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 754974720
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 
