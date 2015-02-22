@@ -289,6 +289,9 @@
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+<<<<<<< HEAD
+=======
+
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
@@ -303,4 +306,5 @@
     <bool name="doze_pulse_on_significant_motion">true</bool>
     <bool name="doze_display_state_supported">true</bool>
  
+>>>>>>> 83795d8... more fixes
 </resources>

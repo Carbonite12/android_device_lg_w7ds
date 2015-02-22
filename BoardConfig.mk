@@ -48,6 +48,8 @@ TARGET_BOOTLOADER_BOARD_NAME := w7
 #Judas'es flags
 TARGET_GLOBAL_CFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_FLAGS += -implicit-function-declaration
+TARGET_GLOBAL_CFLAGS += -implicit-function-declaration
 SUPPRES_UNUSED_WARNING := true
 TARGET_USE_O3 := true
 STRICT_ALIASING := true
