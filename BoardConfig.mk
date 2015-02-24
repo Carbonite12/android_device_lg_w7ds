@@ -35,7 +35,7 @@ TARGET_LIBINIT_DEFINES_FILE := device/lge/w7/init/init_w7.c
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 TARGET_BOARD_PLATFORM := msm8226
-TARGET_CPU_VARIANT := krait
+TARGET_CPU_VARIANT := cortex-a7
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 TARGET_CPU_ABI := armeabi-v7a
@@ -44,11 +44,22 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOOTLOADER_BOARD_NAME := w7
 
+#Judas'es flags
+TARGET_GLOBAL_CFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+SUPPRES_UNUSED_WARNING := true
+TARGET_USE_O3 := true
+STRICT_ALIASING := true
+OPT_MEMORY := true
+TARGET_CPU_SMP := true
+TARGET_GCC_VERSION_ARM := 4.8
+ENABLE_GRAPHITE := true
+
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w7/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/msm8226
-TARGET_KERNEL_CONFIG := cm11_msm8226_defconfig
+TARGET_KERNEL_CONFIG := w7_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w7
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
