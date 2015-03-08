@@ -259,6 +259,11 @@
             8 - Assistant (search)
             16 - App switch
             32 - Camera
+<<<<<<< HEAD
+=======
+            64 - Volume rocker
+
+>>>>>>> 4be8288... remove doze boolz and remove hardware button options
         For example, a device with Home, Back and Menu keys would set this
         config to 7. -->
     <integer name="config_deviceHardwareKeys">1</integer>
@@ -288,17 +293,5 @@
 
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
-
-    <!-- Screen brightness when dozing -->
-    <integer name="config_screenBrightnessDoze">17</integer>
-
-    <!-- Dream of notifications -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
-
-    <!-- Wether doze feature is enabled by default in settings. -->
-    <bool name="config_doze_enabled_by_default">false</bool>
-    <bool name="config_dozeAfterScreenOff">true</bool>
  
 </resources>
