@@ -312,11 +312,8 @@
 
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
+
 <<<<<<< HEAD
- 
-=======
-
-
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
@@ -328,5 +325,6 @@
     <!-- Wether doze feature is enabled by default in settings. -->
     <bool name="config_doze_enabled_by_default">true</bool>
     <bool name="config_dozeAfterScreenOff">true</bool>
->>>>>>> c31f389... test AD
+=======
+>>>>>>> 20576df... Clean up for AD full configuration
 </resources>
