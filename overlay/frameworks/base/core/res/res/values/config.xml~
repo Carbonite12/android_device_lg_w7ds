@@ -266,7 +266,26 @@
 >>>>>>> 4be8288... remove doze boolz and remove hardware button options
         For example, a device with Home, Back and Menu keys would set this
         config to 7. -->
+<<<<<<< HEAD
     <integer name="config_deviceHardwareKeys">1</integer>
+=======
+    <integer name="config_deviceHardwareKeys">65</integer>
+
+    <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+             1 - Home
+             2 - Back
+             4 - Menu
+             8 - Assistant (search)
+            16 - App switch
+            32 - Camera
+            64 - Volume rocker
+         For example, a device with Home, Back and Menu keys would set this
+         config to 7. -->
+
+    <integer name="config_deviceHardwareWakeKeys">65</integer>
+>>>>>>> c31f389... test AD
 
     <!-- Device supports LED flashlight 
     <bool name="config_enableTorch">true</bool> -->
@@ -293,6 +312,10 @@
 
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
+<<<<<<< HEAD
+ 
+=======
+
 
     <!-- Screen brightness when dozing -->
     <integer name="config_screenBrightnessDoze">17</integer>
@@ -303,7 +326,7 @@
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
     <!-- Wether doze feature is enabled by default in settings. -->
-    <bool name="config_doze_enabled_by_default">false</bool>
+    <bool name="config_doze_enabled_by_default">true</bool>
     <bool name="config_dozeAfterScreenOff">true</bool>
- 
+>>>>>>> c31f389... test AD
 </resources>
